@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Abiyyu Syawalagsha | Portofolio</title>
+  <meta
+    name="description"
+    content="Portofolio interaktif Muhammad Abiyyu Syawalagsha - Software Developer & AI Enthusiast"
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- PRELOADER -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-content">
+      <span class="preloader-logo"> ABIYYU <span class="dot-accent">.</span></span>
+      <div class="preloader-bar">
+        <div class="preloader-bar-fill" id="preloaderFill"></div>
+      </div>
+      <span class="preloader-percent" id="preloaderPercent">0%</span>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-container">
+      <a href="#hero" class="logo"> ABIYYU <span class="dot-accent">.</span></a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link" data-id="Tentang" data-en="About">Tentang</a></li>
+        <li><a href="#skills" class="nav-link" data-id="Keahlian" data-en="Skills">Keahlian</a></li>
+        <li><a href="#projects" class="nav-link" data-id="Proyek" data-en="Projects">Proyek</a></li>
+        <li><a href="#certificates" class="nav-link" data-id="Sertifikat" data-en="Certificates">Sertifikat</a></li>
+        <li><a href="#experience" class="nav-link" data-id="Pengalaman" data-en="Experience">Pengalaman</a></li>
+        <li><a href="#contact" class="nav-link" data-id="Kontak" data-en="Contact">Kontak</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="nav-control" id="themeToggle" type="button" aria-label="Ubah mode">
+          <span id="themeIcon" aria-hidden="true">☾</span>
+          <span id="themeLabel">Dark</span>
+        </button>
+
+        <button class="nav-control" id="languageToggle" type="button" aria-label="Ubah bahasa">
+          <span id="languageLabel">ID</span>
+          <span class="language-divider">/</span>
+          <span>EN</span>
+        </button>
+
+        <button class="hamburger" id="hamburger" type="button" aria-label="Buka menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="blob blob-cyan" data-parallax="0.15"></div>
+      <div class="blob blob-purple" data-parallax="0.3"></div>
+      <div class="blob blob-pink" data-parallax="0.08"></div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal-line" data-animation="fade-up"
+         data-id="Halo, perkenalkan saya" data-en="Hello, I'm">Halo, perkenalkan saya</p>
+
+      <h1 class="hero-name" id="heroName" data-text="Muhammad Abiyyu Syawalagsha"></h1>
+
+      <h2 class="hero-role reveal-line" data-animation="fade-up">
+        <span data-id="Mahasiswa Informatika" data-en="Informatics Undergraduate Student">Mahasiswa Informatika</span>
+        <span class="role-sep">/</span>
+        <span data-id="Software Developer & AI Enthusiast" data-en="Software Developer & AI Enthusiast">Software Developer &amp; AI Enthusiast</span>
+      </h2>
+
+      <div class="hero-cta reveal-line" data-animation="fade-up">
+        <a href="#projects" class="btn btn-primary">
+          <span data-id="Lihat Proyek Saya" data-en="View My Projects">Lihat Proyek Saya</span>
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <span data-id="Hubungi Saya" data-en="Contact Me">Hubungi Saya</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span class="scroll-hint-line"></span>
+      <span class="scroll-hint-text" data-id="GULIR" data-en="SCROLL">GULIR</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="section-inner">
+      <div class="section-header" data-animation="fade-up">
+        <span class="section-tag" data-id="01 — Tentang" data-en="01 — About">01 — Tentang</span>
+        <h2 class="section-title" data-id="Mengenal Lebih Dekat" data-en="Get to Know Me">Mengenal Lebih Dekat</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text" data-animation="fade-up">
+          <p
+            data-html-id="Saya adalah mahasiswa <strong>Informatika di Universitas Jember</strong> dengan ketertarikan besar pada <strong>Artificial Intelligence</strong>, <strong>Machine Learning</strong>, dan <strong>Data Structures</strong>. Bagi saya, kode adalah alat untuk menyelesaikan masalah nyata secara elegan."
+            data-html-en="I am an <strong>Informatics undergraduate student at the University of Jember</strong> with a strong interest in <strong>Artificial Intelligence</strong>, <strong>Machine Learning</strong>, and <strong>Data Structures</strong>. For me, code is a tool for solving real-world problems elegantly."
+          >
+            Saya adalah mahasiswa <strong>Informatika di Universitas Jember</strong> dengan
+            ketertarikan besar pada <strong>Artificial Intelligence</strong>,
+            <strong>Machine Learning</strong>, dan <strong>Data Structures</strong>.
+            Bagi saya, kode adalah alat untuk menyelesaikan masalah nyata secara elegan.
+          </p>
+          <p
+            data-html-id="Di luar kelas, saya aktif di <strong>BEM FASILKOM UNEJ</strong> pada Divisi <strong>Kastrat</strong> ruang yang mengasah cara saya berpikir kritis dan peka terhadap kebutuhan mahasiswa lain, sekaligus menyeimbangkan sisi teknis dengan kepekaan sosial."
+            data-html-en="Outside class, I am active in <strong>BEM FASILKOM UNEJ</strong> in the <strong>Kastrat</strong> spaces that sharpen my critical thinking and awareness of other students' needs, while balancing technical skills with social sensitivity."
+          >
+            Di luar kelas, saya aktif di <strong>BEM FASILKOM UNEJ</strong> pada Divisi
+            <strong>Kastrat</strong> ruang yang mengasah cara
+            saya berpikir kritis dan peka terhadap kebutuhan mahasiswa lain, sekaligus
+            menyeimbangkan sisi teknis dengan kepekaan sosial.
+          </p>
+        </div>
+
+        <div class="glass-card about-card" data-animation="blur-focus">
+          <ul class="about-stats">
+            <li><span class="stat-num">3+</span><span class="stat-label" data-id="Proyek AI & ML" data-en="AI & ML Projects">Proyek AI &amp; ML</span></li>
+            <li><span class="stat-num">1</span><span class="stat-label" data-id="BEM Fasilkom" data-en="BEM Fasilkom ">BEM Fasilkom</span></li>
+            <li><span class="stat-num">∞</span><span class="stat-label" data-id="Rasa ingin tahu" data-en="Curiosity">Rasa ingin tahu</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS / TOOLS -->
+  <section class="skills" id="skills">
+    <div class="section-inner">
+      <div class="section-header" data-animation="fade-up">
+        <span class="section-tag" data-id="02 — Keahlian" data-en="02 — Skills">02 — Keahlian</span>
+        <h2 class="section-title" data-id="Tools & Domain" data-en="Tools & Domains">Tools &amp; Domain</h2>
+        <p class="section-subtitle"
+           data-id="Tools yang saya gunakan untuk membuat berbagai project."
+           data-en="Tools I use to build different kinds of projects.">
+          Tools yang saya gunakan untuk membuat berbagai project.
+        </p>
+      </div>
+
+      <!--
+        Tampilan dibuat mengikuti referensi: beberapa logo besar di tengah,
+        sementara nama tools/domain muncul redup di area sekitar.
+        Posisi tulisan redup diacak oleh script.js.
+      -->
+      <div class="skills-stage" data-animation="fade-up">
+        <div class="skills-floating" id="skillsFloating" aria-hidden="true">
+          <span class="floating-skill">Python</span>
+          <span class="floating-skill">C++</span>
+          <span class="floating-skill">C#</span>
+          <span class="floating-skill">HTML5</span>
+          <span class="floating-skill">CSS3</span>
+          <span class="floating-skill">JavaScript</span>
+          <span class="floating-skill">SQL</span>
+          <span class="floating-skill">Git</span>
+          <span class="floating-skill">Machine Learning</span>
+          <span class="floating-skill">Artificial Intelligence</span>
+          <span class="floating-skill">Data Structures</span>
+          <span class="floating-skill">Algorithms</span>
+          <span class="floating-skill">Database Design</span>
+          <span class="floating-skill">SVD Algorithm</span>
+          <span class="floating-skill">Figma</span>
+          <span class="floating-skill">React</span>
+        </div>
+
+        <div class="skills-core">
+          <article class="skill-orb">
+            <i class="devicon-python-plain colored"></i>
+            <span>Python</span>
+          </article>
+          <article class="skill-orb">
+            <i class="devicon-javascript-plain colored"></i>
+            <span>JavaScript</span>
+          </article>
+          <article class="skill-orb">
+            <i class="devicon-react-original colored"></i>
+            <span>React</span>
+          </article>
+          <article class="skill-orb">
+            <i class="devicon-nodejs-plain colored"></i>
+            <span>Node.js</span>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="section-inner">
+      <div class="section-header" data-animation="fade-up">
+        <span class="section-tag" data-id="03 — Portofolio" data-en="03 — Portfolio">03 — Portofolio</span>
+        <h2 class="section-title" data-id="Proyek Pilihan" data-en="Selected Projects">Proyek Pilihan</h2>
+        <p class="section-subtitle"
+           data-id="Template project sudah disiapkan agar nanti Anda tinggal mengganti gambar, nama, deskripsi, dan teknologi yang digunakan."
+           data-en="Project templates are ready, so you only need to replace the image, title, description, and technologies used.">
+          Template project sudah disiapkan agar nanti Anda tinggal mengganti gambar, nama, deskripsi, dan teknologi yang digunakan.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- PROJECT TEMPLATE 01 -->
+        <article class="project-card" data-animation="blur-focus">
+          <div class="project-image-wrap">
+            <img src="https://placehold.co/900x520/10131f/2ee6d6?text=PROJECT+IMAGE+01"
+                 alt="Preview Project 01"
+                 class="project-image" />
+            <span class="project-number">01</span>
+          </div>
+          <div class="project-body">
+            <span class="project-kicker" data-id="PROJECT" data-en="PROJECT">PROJECT</span>
+            <h3 class="project-title"
+                data-id="Nama Project 01"
+                data-en="Project Name 01">Nama Project 01</h3>
+            <p class="project-desc"
+               data-id="Tuliskan paragraf singkat yang menjelaskan masalah, tujuan, dan solusi dari project ini."
+               data-en="Write a short paragraph explaining the problem, goal, and solution of this project.">
+              Tuliskan paragraf singkat yang menjelaskan masalah, tujuan, dan solusi dari project ini.
+            </p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <a href="#" class="project-link" data-placeholder-link
+               data-id="Lihat Project ↗" data-en="View Project ↗">Lihat Project ↗</a>
+          </div>
+        </article>
+
+        <!-- PROJECT TEMPLATE 02 -->
+        <article class="project-card" data-animation="blur-focus">
+          <div class="project-image-wrap">
+            <img src="https://placehold.co/900x520/10131f/a259ff?text=PROJECT+IMAGE+02"
+                 alt="Preview Project 02"
+                 class="project-image" />
+            <span class="project-number">02</span>
+          </div>
+          <div class="project-body">
+            <span class="project-kicker" data-id="PROJECT" data-en="PROJECT">PROJECT</span>
+            <h3 class="project-title"
+                data-id="Nama Project 02"
+                data-en="Project Name 02">Nama Project 02</h3>
+            <p class="project-desc"
+               data-id="Tuliskan paragraf singkat tentang fitur utama, pengguna, dan hasil yang ingin dicapai dari project ini."
+               data-en="Write a short paragraph about the main features, users, and intended result of this project.">
+              Tuliskan paragraf singkat tentang fitur utama, pengguna, dan hasil yang ingin dicapai dari project ini.
+            </p>
+            <div class="project-tags">
+              <span>Python</span><span>AI</span><span>Database</span>
+            </div>
+            <a href="#" class="project-link" data-placeholder-link
+               data-id="Lihat Project ↗" data-en="View Project ↗">Lihat Project ↗</a>
+          </div>
+        </article>
+
+        <!-- PROJECT TEMPLATE 03 -->
+        <article class="project-card" data-animation="blur-focus">
+          <div class="project-image-wrap">
+            <img src="https://placehold.co/900x520/10131f/ff4fd8?text=PROJECT+IMAGE+03"
+                 alt="Preview Project 03"
+                 class="project-image" />
+            <span class="project-number">03</span>
+          </div>
+          <div class="project-body">
+            <span class="project-kicker" data-id="PROJECT" data-en="PROJECT">PROJECT</span>
+            <h3 class="project-title"
+                data-id="Nama Project 03"
+                data-en="Project Name 03">Nama Project 03</h3>
+            <p class="project-desc"
+               data-id="Gunakan bagian ini untuk menjelaskan konteks project, teknologi yang dipakai, dan kontribusi Anda."
+               data-en="Use this area to explain the project context, technologies used, and your contribution.">
+              Gunakan bagian ini untuk menjelaskan konteks project, teknologi yang dipakai, dan kontribusi Anda.
+            </p>
+            <div class="project-tags">
+              <span>C++</span><span>Algorithms</span><span>Data Structures</span>
+            </div>
+            <a href="#" class="project-link" data-placeholder-link
+               data-id="Lihat Project ↗" data-en="View Project ↗">Lihat Project ↗</a>
+          </div>
+        </article>
+
+        <!-- PROJECT TEMPLATE 04 -->
+        <article class="project-card" data-animation="blur-focus">
+          <div class="project-image-wrap">
+            <img src="https://placehold.co/900x520/10131f/2ee6d6?text=PROJECT+IMAGE+04"
+                 alt="Preview Project 04"
+                 class="project-image" />
+            <span class="project-number">04</span>
+          </div>
+          <div class="project-body">
+            <span class="project-kicker" data-id="PROJECT" data-en="PROJECT">PROJECT</span>
+            <h3 class="project-title"
+                data-id="Nama Project 04"
+                data-en="Project Name 04">Nama Project 04</h3>
+            <p class="project-desc"
+               data-id="Template ini dapat dipakai untuk project berikutnya dengan mengganti isi teks dan gambar sesuai kebutuhan."
+               data-en="This template can be reused for your next project by replacing the text and image as needed.">
+              Template ini dapat dipakai untuk project berikutnya dengan mengganti isi teks dan gambar sesuai kebutuhan.
+            </p>
+            <div class="project-tags">
+              <span>UI Design</span><span>Figma</span><span>Frontend</span>
+            </div>
+            <a href="#" class="project-link" data-placeholder-link
+               data-id="Lihat Project ↗" data-en="View Project ↗">Lihat Project ↗</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section class="certificates" id="certificates">
+    <div class="section-inner">
+      <div class="section-header" data-animation="fade-up">
+        <span class="section-tag" data-id="04 — Sertifikat" data-en="04 — Certificates">04 — Sertifikat</span>
+        <h2 class="section-title" data-id="Sertifikat & Pencapaian" data-en="Certificates & Achievements">Sertifikat &amp; Pencapaian</h2>
+        <p class="section-subtitle"
+           data-id="Template sertifikat siap diisi dengan gambar, nama sertifikat, penyelenggara, dan tanggal."
+           data-en="Certificate templates are ready for the image, certificate name, issuer, and date.">
+          Template sertifikat siap diisi dengan gambar, nama sertifikat, penyelenggara, dan tanggal.
+        </p>
+      </div>
+
+      <div class="content-grid">
+        <article class="certificate-card content-card" data-animation="blur-focus">
+          <div class="certificate-image-wrap">
+            <img src="https://placehold.co/900x580/10131f/2ee6d6?text=CERTIFICATE+01"
+                 alt="Preview Sertifikat 01"
+                 class="certificate-image" />
+          </div>
+          <div class="content-card-body">
+            <h3 data-id="Nama Sertifikat 01" data-en="Certificate Name 01">Nama Sertifikat 01</h3>
+            <div class="content-meta">
+              <span data-id="Penyelenggara" data-en="Issuer">Penyelenggara</span>
+              <span data-id="Januari 2026" data-en="January 2026">Januari 2026</span>
+            </div>
+            <p data-id="Tuliskan keterangan singkat mengenai sertifikat ini dan kemampuan yang diperoleh."
+               data-en="Write a short description of this certificate and the skills gained.">
+              Tuliskan keterangan singkat mengenai sertifikat ini dan kemampuan yang diperoleh.
+            </p>
+          </div>
+        </article>
+
+        <article class="certificate-card content-card" data-animation="blur-focus">
+          <div class="certificate-image-wrap">
+            <img src="https://placehold.co/900x580/10131f/a259ff?text=CERTIFICATE+02"
+                 alt="Preview Sertifikat 02"
+                 class="certificate-image" />
+          </div>
+          <div class="content-card-body">
+            <h3 data-id="Nama Sertifikat 02" data-en="Certificate Name 02">Nama Sertifikat 02</h3>
+            <div class="content-meta">
+              <span data-id="Penyelenggara" data-en="Issuer">Penyelenggara</span>
+              <span data-id="Februari 2026" data-en="February 2026">Februari 2026</span>
+            </div>
+            <p data-id="Ganti gambar dan teks pada template ini dengan sertifikat yang ingin Anda tampilkan."
+               data-en="Replace the image and text in this template with the certificate you want to display.">
+              Ganti gambar dan teks pada template ini dengan sertifikat yang ingin Anda tampilkan.
+            </p>
+          </div>
+        </article>
+
+        <article class="certificate-card content-card" data-animation="blur-focus">
+          <div class="certificate-image-wrap">
+            <img src="https://placehold.co/900x580/10131f/ff4fd8?text=CERTIFICATE+03"
+                 alt="Preview Sertifikat 03"
+                 class="certificate-image" />
+          </div>
+          <div class="content-card-body">
+            <h3 data-id="Nama Sertifikat 03" data-en="Certificate Name 03">Nama Sertifikat 03</h3>
+            <div class="content-meta">
+              <span data-id="Penyelenggara" data-en="Issuer">Penyelenggara</span>
+              <span data-id="Maret 2026" data-en="March 2026">Maret 2026</span>
+            </div>
+            <p data-id="Tambahkan detail penghargaan, kompetensi, atau pencapaian yang relevan di sini."
+               data-en="Add details about the award, competency, or relevant achievement here.">
+              Tambahkan detail penghargaan, kompetensi, atau pencapaian yang relevan di sini.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="experience" id="experience">
+    <div class="section-inner">
+      <div class="section-header" data-animation="fade-up">
+        <span class="section-tag" data-id="05 — Pengalaman" data-en="05 — Experience">05 — Pengalaman</span>
+        <h2 class="section-title" data-id="Pengalaman Saya" data-en="My Experience">Pengalaman Saya</h2>
+        <p class="section-subtitle"
+           data-id="Template pengalaman dapat Anda isi dengan organisasi, pekerjaan, magang, atau kegiatan lainnya."
+           data-en="Experience templates can be filled with organizations, work, internships, or other activities.">
+          Template pengalaman dapat Anda isi dengan organisasi, pekerjaan, magang, atau kegiatan lainnya.
+        </p>
+      </div>
+
+      <div class="experience-list">
+        <!-- EXPERIENCE TEMPLATE 01 -->
+        <article class="experience-card" data-animation="blur-focus">
+          <div class="experience-marker">01</div>
+          <div class="experience-logo">LOGO</div>
+          <div class="experience-content">
+            <h3 data-id="Nama Posisi 01" data-en="Position Name 01">Nama Posisi 01</h3>
+            <p class="experience-company" data-id="Nama Organisasi / Perusahaan" data-en="Organization / Company Name">Nama Organisasi / Perusahaan</p>
+            <div class="experience-meta">
+              <span data-id="Januari 2026 — Sekarang" data-en="January 2026 — Present">Januari 2026 — Sekarang</span>
+              <span data-id="Kota / Lokasi" data-en="City / Location">Kota / Lokasi</span>
+            </div>
+            <p class="experience-desc"
+               data-id="Tuliskan paragraf mengenai tanggung jawab, kontribusi, dan hal yang Anda pelajari dari pengalaman ini."
+               data-en="Write a paragraph about your responsibilities, contributions, and what you learned from this experience.">
+              Tuliskan paragraf mengenai tanggung jawab, kontribusi, dan hal yang Anda pelajari dari pengalaman ini.
+            </p>
+            <div class="experience-tags">
+              <span>Teamwork</span><span>Communication</span><span>Leadership</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- EXPERIENCE TEMPLATE 02 -->
+        <article class="experience-card" data-animation="blur-focus">
+          <div class="experience-marker">02</div>
+          <div class="experience-logo">LOGO</div>
+          <div class="experience-content">
+            <h3 data-id="Nama Posisi 02" data-en="Position Name 02">Nama Posisi 02</h3>
+            <p class="experience-company" data-id="Nama Organisasi / Laboratorium" data-en="Organization / Laboratory Name">Nama Organisasi / Laboratorium</p>
+            <div class="experience-meta">
+              <span data-id="Mei 2026 — Sekarang" data-en="May 2026 — Present">Mei 2026 — Sekarang</span>
+              <span data-id="Kota / Lokasi" data-en="City / Location">Kota / Lokasi</span>
+            </div>
+            <p class="experience-desc"
+               data-id="Gunakan bagian ini untuk menjelaskan pekerjaan utama, project yang dikerjakan, atau peran yang Anda jalankan."
+               data-en="Use this area to explain your main work, projects, or role in the organization.">
+              Gunakan bagian ini untuk menjelaskan pekerjaan utama, project yang dikerjakan, atau peran yang Anda jalankan.
+            </p>
+            <div class="experience-tags">
+              <span>Programming</span><span>Problem Solving</span><span>Database</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- EXPERIENCE TEMPLATE 03 -->
+        <article class="experience-card" data-animation="blur-focus">
+          <div class="experience-marker">03</div>
+          <div class="experience-logo">LOGO</div>
+          <div class="experience-content">
+            <h3 data-id="Nama Posisi 03" data-en="Position Name 03">Nama Posisi 03</h3>
+            <p class="experience-company" data-id="Nama Kegiatan / Komunitas" data-en="Activity / Community Name">Nama Kegiatan / Komunitas</p>
+            <div class="experience-meta">
+              <span data-id="September 2026" data-en="September 2026">September 2026</span>
+              <span data-id="Kota / Lokasi" data-en="City / Location">Kota / Lokasi</span>
+            </div>
+            <p class="experience-desc"
+               data-id="Template ini dapat dipakai untuk pengalaman tambahan. Cukup ganti judul, organisasi, waktu, deskripsi, dan tags."
+               data-en="Use this template for another experience. Just replace the title, organization, period, description, and tags.">
+              Template ini dapat dipakai untuk pengalaman tambahan. Cukup ganti judul, organisasi, waktu, deskripsi, dan tags.
+            </p>
+            <div class="experience-tags">
+              <span>Event</span><span>Collaboration</span><span>Planning</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="section-inner">
+      <div class="section-header" data-animation="fade-up">
+        <span class="section-tag" data-id="06 — Kontak" data-en="06 — Contact">06 — Kontak</span>
+        <h2 class="section-title" data-id="Mari Terhubung" data-en="Let's Connect">Mari Terhubung</h2>
+      </div>
+
+      <div class="contact-layout">
+        <div class="social-card glass-card" data-animation="blur-focus">
+          <p class="social-title" data-id="Temukan saya di" data-en="Find me on">Temukan saya di</p>
+
+          <!--
+            LINK SOSIAL MEDIA:
+            Ganti href="#" dengan link akun Anda masing-masing.
+            Contoh: href="https://instagram.com/username"
+          -->
+          <div class="social-links">
+            <a class="social-link" href="#" aria-label="Instagram" data-placeholder-link>
+              <img src="https://cdn.simpleicons.org/instagram/ff4fd8" alt="" />
+              <span>Instagram</span>
+            </a>
+
+            <a class="social-link" href="#" aria-label="LinkedIn" data-placeholder-link>
+              <img src="https://cdn.simpleicons.org/linkedin/0a66c2" alt="" />
+              <span>LinkedIn</span>
+            </a>
+
+            <a class="social-link" href="#" aria-label="GitHub" data-placeholder-link>
+              <img src="https://cdn.simpleicons.org/github/ffffff" alt="" class="github-icon" />
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+
+        <form class="glass-card contact-form" id="contactForm" data-animation="blur-focus" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name" data-id="Nama" data-en="Name">Nama</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Nama lengkap"
+                data-placeholder-id="Nama lengkap"
+                data-placeholder-en="Full name"
+                autocomplete="off"
+              />
+              <span class="error-msg" id="errorName"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email" data-id="Email" data-en="Email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="email@contoh.com"
+                data-placeholder-id="email@contoh.com"
+                data-placeholder-en="email@example.com"
+                autocomplete="off"
+              />
+              <span class="error-msg" id="errorEmail"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message" data-id="Pesan" data-en="Message">Pesan</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Tulis pesan Anda..."
+              data-placeholder-id="Tulis pesan Anda..."
+              data-placeholder-en="Write your message..."
+            ></textarea>
+            <span class="error-msg" id="errorMessage"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">
+            <span data-id="Kirim Pesan" data-en="Send Message">Kirim Pesan</span>
+          </button>
+
+          <p class="form-success" id="formSuccess"
+             data-id="✓ Pesan terkirim. Terima kasih sudah menghubungi saya!"
+             data-en="✓ Message sent. Thank you for reaching out!">
+            ✓ Pesan terkirim. Terima kasih sudah menghubungi saya!
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>
+      &copy; <span id="year"></span> Muhammad Abiyyu Syawalagsha —
+      <span data-id="Dibangun dengan HTML, CSS & JavaScript murni."
+            data-en="Built with pure HTML, CSS & JavaScript.">
+        Dibangun dengan HTML, CSS &amp; JavaScript murni.
+      </span>
+    </p>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Kembali ke atas">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
